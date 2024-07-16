@@ -11,13 +11,15 @@
     <?php
         include('includes/conexao.php');
         $nome = $_POST['nome'];
-        $estado = $_POST['estado'];
-        echo "<h1>Dados da cidade</h1>";
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        echo "<h1>Dados do Cliente</h1>";
         echo "Nome: $nome<br>";
+        echo "Email: $email<br>";
         // INSER INTO cidade(nome, estado);
         // VALUES ('$nome', '$estado');
-        $sql = "INSERT INTO cidade (nome, estado)";
-        $sql .= " VALUES('".$nome."','".$estado."')";
+        $sql = "INSERT INTO cliente (nome, email, senha)";
+        $sql .= " VALUES('".$nome."','".$email."','".$senha."')";
         echo $sql;
         $result = mysqli_query($con,$sql);
         if($result){
