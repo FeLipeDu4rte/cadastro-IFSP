@@ -1,13 +1,29 @@
 body {
-    background: linear-gradient(to bottom right, #000000, #ffffff); /* degradê preto para branco */
-    margin: 0; /* remove margens padrão do body */
-    font-family: Arial, sans-serif; /* fonte para todo o documento */
-    color: #333; /* cor padrão para o texto */
+    background: linear-gradient(to bottom, #000000, #ffffff);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    margin: 0;
 }
+
+.container {
+    background-color: #cccccc;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block; /* Para ajustar ao conteúdo */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #333333;
+}
+
 
 /* Estilos para o retângulo centralizado */
 .retangulo {
@@ -26,25 +42,10 @@ body {
     color: rgb(255, 255, 255); /* cor do texto */
 }
 
-/* Estilos para os botões */
-.retangulo .botao {
-    padding: 12px 24px; /* padding interno */
-    font-size: 16px; /* tamanho da fonte */
-    border: none; /* remove a borda */
-    border-radius: 4px; /* bordas arredondadas */
-    cursor: pointer; /* cursor ao passar */
-    background-color: #000000; /* cor de fundo do botão */
-    color: #fff; /* cor do texto */
-    text-decoration: none; /* remove sublinhado do link */
-    transition: background-color 0.3s ease; /* transição suave de cor */
-    margin: 0 10px; /* margem entre os botões */
-    outline: none; /* remove o contorno ao focar */
-    border: 1px solid transparent; /* borda transparente */
-}
-
 /* Efeito de hover nos botões */
 .retangulo .botao:hover {
-    background-color: #0056b3; /* cor de fundo do hover */
+    background-color: #000000;
+    color: #ffffff; /* cor de fundo do hover */
 }
 
 /* Estilo para o link dentro do botão */
