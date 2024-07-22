@@ -6,13 +6,13 @@ USE IFSP;
 
 CREATE TABLE Cidade (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(100),
+    nomecidade VARCHAR(100),
     estado CHAR(2)
 );
 
 CREATE TABLE Cliente (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(100),
+    nomecliente VARCHAR(100),
     email VARCHAR(100),
     senha VARCHAR(100),
     ativo BOOL,
