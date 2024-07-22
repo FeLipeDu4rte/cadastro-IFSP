@@ -27,12 +27,12 @@ body {
 
 /* Estilos para o retângulo centralizado */
 .retangulo {
-    width: 400px; /* largura do retângulo */
-    padding: 30px; /* espaçamento interno */
-    border-radius: 8px; /* bordas arredondadas */
-    background-color: #00000065; /* cor de fundo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.76); /* sombra suave */
-    text-align: center; /* alinha o texto centralmente */
+    width: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #00000065;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.767);
+    text-align: center;
 }
 
 /* Estilos para o título */
