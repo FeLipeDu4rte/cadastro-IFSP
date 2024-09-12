@@ -10,8 +10,8 @@
 <body>
     <?php
         include('includes/conexao.php');
-        $sql = "SELECT cli.id, cli.nome nomecliente, cli.email, cli.ativo,
-                cid.nome nomecidade, cid.estado
+        $sql = "SELECT cli.id, cli.nomecliente nomecliente, cli.email, cli.ativo,
+                cid.nomecidade nomecidade, cid.estado
                 FROM cliente cli
                 lEFT JOIN cidade cid on cid.id = cidade_id";
         // Executa a consulta
@@ -34,7 +34,7 @@
             while($row = mysqli_fetch_array($result)){
                 echo "<tr>";
                 echo "<td>".$row['id']."</td>";
-                echo "<td>".$row['nomecidade']."</td>";
+                echo "<td>".$row['nomecliente']."</td>";
                 echo "<td>".$row['email']."</td>";
                 echo "<td>".($row['ativo'] == 1 ? 'Sim': 'Não')."</td>";
                 echo "<td><a href ='alteraCliente.php?id=".$row['id']."'>Alterar</a></td>";
@@ -44,7 +44,7 @@
         ?>
     </table>
     <div class="footer">
-            <p><a href="index.html">Voltar</a></p>
+            <p><a href="index.php">Voltar</a></p>
     </div>
     </div>
 </body>
